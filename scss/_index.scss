@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: $bG;
+}
+
+.containerHeaderFlex{
+    @include cFlex(row, space-between, center);
+    height: 69px;
+    padding: 10px;
+    border-bottom: 1px solid $color;
+
+    img{
+        height: 50px;
+    }
+
+    .containerNavFlex{
+        border: $borde;
+       
+
+        a{
+            font-size: $sizeFont;
+            border: $borde;
+            margin-right: 10px;
+            font-family: $font;
+            color: $color;
+        }
+
+        a:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.containerMision{
+    @include cFlex(row, center, center);
+    border: $borde;
+    color: $color;
+    height: 700px;
+    max-width: 1200px;
+    margin: auto;
+    background-image: url("../recursos/mission-background.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    div{
+        background-color: $bG;
+        border: $borde;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+
+        h2{
+            font-family: $font;
+            font-size: $sizeFont;
+        }
+
+        p{
+            font-family: $font;
+            font-size: 18px;
+        }
+    }
+}
+
+.containerMonth{
+    border: $borde;
+    @include cFlex(column, center, center);
+    color: $color;
+    max-width: 1000px;
+    margin: auto;
+
+    .containerHead{
+        border: $borde;
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+
+        h2{
+            font-family: $font;
+            font-size: $sizeFont
+        }
+
+        p{
+            font-family: $font;
+        }
+    }
+
+    .containerMonthImg{
+        @include cFlex(row, center, center);
+        flex-wrap: wrap;
+
+        .containerImg{
+            margin: 5px;
+
+            img{
+                max-width: 300px;
+                max-height: 200px;
+            }
+
+            p{
+                text-align: center;
+                font-family: $font;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.containerLocation{
+    max-width: 1200px;
+    min-height: 500px;
+    background-image: url("../recursos/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 70px;
+    @include cFlex(column, center, center);
+
+    h2{
+        font-family: $font;
+        font-size:30px;
+        color: $color;
+        margin-bottom: 20px;
+        background-color: $bG;
+        padding: 5px;
+    }
+
+    .subcontainerLocation{
+        @include cFlex(row, space-evenly, center);
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 300px;
+
+
+        div{
+            border: $borde;
+            width: 300px;
+            height: 300px;
+            @include cFlex(column, center, center);
+            background-color:$bG;
+            color: $color;
+            font-family: $font;
+            font-size: $sizeFont;
+
+            p{
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+}
+
+.footer{
+    border:$borde;
+    margin: auto;
+    max-width: 1200px;
+    height: 300px;
+    color: $color;
+    font-family: $font;
+    @include cFlex(column, space-evenly, center);
+
+    #boxCenter{
+        text-align: center;
+
+        a{
+            color: $color;
+        }
+    }
+
+    #boxLeft{
+        border: $borde;
+        @include cFlex(row, space-between, center);
+        width: 100%;
+
+        p{
+            margin-left: 20px;
+            font-family: $font;
+        }
+
+        svg{
+            margin-right: 20px;
+            color: $color;
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .containerHeaderFlex{
+        @include cFlex(column, center, center)
+    }
+
+   
+  }
+
+
+

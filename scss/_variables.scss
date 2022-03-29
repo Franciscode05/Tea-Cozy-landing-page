@@ -1,0 +1,15 @@
+/*variables*/
+$font: Helvetica;
+$sizeFont: 22px;
+$color: seashell;
+$bG: black;
+$opacity:0.9;
+$borde: none;
+
+/*mixin*/
+@mixin cFlex($direction, $jC, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jC;
+    align-items: $align;
+}

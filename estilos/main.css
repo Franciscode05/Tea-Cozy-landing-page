@@ -1,0 +1,169 @@
+/*variables*/
+/*mixin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box; }
+
+body {
+  background-color: black; }
+
+.containerHeaderFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  padding: 10px;
+  border-bottom: 1px solid seashell; }
+  .containerHeaderFlex img {
+    height: 50px; }
+  .containerHeaderFlex .containerNavFlex {
+    border: none; }
+    .containerHeaderFlex .containerNavFlex a {
+      font-size: 22px;
+      border: none;
+      margin-right: 10px;
+      font-family: Helvetica;
+      color: seashell; }
+    .containerHeaderFlex .containerNavFlex a:last-child {
+      margin-right: 0; }
+
+.containerMision {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: seashell;
+  height: 700px;
+  max-width: 1200px;
+  margin: auto;
+  background-image: url("../recursos/mission-background.webp");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .containerMision div {
+    background-color: black;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%; }
+    .containerMision div h2 {
+      font-family: Helvetica;
+      font-size: 22px; }
+    .containerMision div p {
+      font-family: Helvetica;
+      font-size: 18px; }
+
+.containerMonth {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: seashell;
+  max-width: 1000px;
+  margin: auto; }
+  .containerMonth .containerHead {
+    border: none;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center; }
+    .containerMonth .containerHead h2 {
+      font-family: Helvetica;
+      font-size: 22px; }
+    .containerMonth .containerHead p {
+      font-family: Helvetica; }
+  .containerMonth .containerMonthImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .containerMonth .containerMonthImg .containerImg {
+      margin: 5px; }
+      .containerMonth .containerMonthImg .containerImg img {
+        max-width: 300px;
+        max-height: 200px; }
+      .containerMonth .containerMonthImg .containerImg p {
+        text-align: center;
+        font-family: Helvetica;
+        padding-top: 10px; }
+
+.containerLocation {
+  max-width: 1200px;
+  min-height: 500px;
+  background-image: url("../recursos/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .containerLocation h2 {
+    font-family: Helvetica;
+    font-size: 30px;
+    color: seashell;
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 5px; }
+  .containerLocation .subcontainerLocation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 300px; }
+    .containerLocation .subcontainerLocation div {
+      border: none;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: seashell;
+      font-family: Helvetica;
+      font-size: 22px; }
+      .containerLocation .subcontainerLocation div p {
+        margin-bottom: 10px; }
+
+.footer {
+  border: none;
+  margin: auto;
+  max-width: 1200px;
+  height: 300px;
+  color: seashell;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer #boxCenter {
+    text-align: center; }
+    .footer #boxCenter a {
+      color: seashell; }
+  .footer #boxLeft {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    .footer #boxLeft p {
+      margin-left: 20px;
+      font-family: Helvetica; }
+    .footer #boxLeft svg {
+      margin-right: 20px;
+      color: seashell; }
+
+@media only screen and (max-width: 600px) {
+  .containerHeaderFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
